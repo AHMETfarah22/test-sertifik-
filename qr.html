@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mode Academy QR Kodu</title>
+  <meta name="robots" content="noindex">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,400..600&family=Schibsted+Grotesk:wght@400;500;600&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <main class="qr-page">
+    <section class="panel no-print">
+      <h1>QR kodu</h1>
+      <p>Öğrenciler bu kodu okutunca sertifika sayfası açılır. Sitenin yayındaki adresini yaz, sonra afişi yazdır ya da QR kodunu resim olarak indir.</p>
+
+      <div class="field">
+        <label for="url">Sertifika sayfasının adresi</label>
+        <input id="url" type="url" inputmode="url" placeholder="https://okulum-sertifika.netlify.app" autocomplete="off" spellcheck="false">
+      </div>
+      <p class="hint" id="hint" aria-live="polite"></p>
+
+      <div class="panel-actions">
+        <button class="btn" id="print" type="button">Afişi yazdır</button>
+        <button class="btn btn-quiet" id="png" type="button">QR kodunu indir</button>
+      </div>
+
+      <a class="link preview" href="index.html">Öğrenci sayfasını önizle</a>
+    </section>
+
+    <section class="poster" aria-label="Yazdırılacak afiş">
+      <svg class="poster-frame" data-guilloche="poster" aria-hidden="true"></svg>
+      <p class="org">Mode Academy</p>
+      <h2>Sertifikanı al</h2>
+      <p class="poster-lead">Telefonunun kamerasını bu koda tut, açılan sayfadan iki sertifikanı indir.</p>
+      <div class="qr" id="qr"></div>
+      <p class="poster-url" id="posterUrl"></p>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcode-generator/1.4.4/qrcode.min.js"></script>
+  <script src="assets/guilloche.js"></script>
+  <script src="assets/qr.js"></script>
+</body>
+</html>
