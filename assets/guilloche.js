@@ -127,16 +127,6 @@
       add(svg, band({ x: 0, y: 10, width: 600, A: 5, waves: 9, lines: 3 }), "g-line g-thin");
     },
 
-    thumb: function (svg) {
-      var accent = svg.getAttribute("data-tone") === "accent";
-      svg.setAttribute("viewBox", "0 0 88 62");
-      add(svg, frame({ x: 5, y: 5, w: 78, h: 52, r: 3, A: 1.4, waves: 46, lines: 2, step: 0.4 }), accent ? "g-accent" : "g-line");
-      el(svg, "rect", { x: 26, y: 15, width: 36, height: 3.4, rx: 1, class: "g-fill-ink" });
-      el(svg, "rect", { x: 31, y: 25, width: 26, height: 2, rx: 1, class: "g-fill-soft" });
-      el(svg, "rect", { x: 24, y: 30, width: 40, height: 1.4, rx: 0.7, class: "g-fill-soft" });
-      add(svg, ring({ cx: 44, cy: 44, R: 5.2, A: 1.4, k: 10, lines: 3, steps: 180 }), "g-accent");
-    },
-
     poster: function (svg) {
       svg.setAttribute("viewBox", "0 0 210 297");
       add(svg, frame({ x: 11, y: 11, w: 188, h: 275, r: 6, A: 2.2, waves: 130, lines: 4, step: 0.5 }), "g-line");

@@ -83,16 +83,6 @@ body {
   vector-effect: non-scaling-stroke;
 }
 
-.g-fill-ink {
-  fill: var(--ink);
-  opacity: 0.85;
-}
-
-.g-fill-soft {
-  fill: var(--ink-soft);
-  opacity: 0.45;
-}
-
 .monogram {
   fill: var(--ink);
   font-family: var(--display);
@@ -196,6 +186,7 @@ h1 {
   width: 100%;
   height: auto;
   aspect-ratio: 88 / 62;
+  object-fit: cover;
   margin-top: 0.25rem;
   border-radius: 2px;
   background: var(--card);

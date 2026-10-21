@@ -11,10 +11,10 @@
 
 ## Kendi sertifikalarını koymak
 
-`sertifikalar` klasöründeki iki örnek PDF'i kendi dosyalarınla değiştir. Adları aynı kalsın:
+Sertifikaları değiştirmek için `sertifikalar` klasöründeki iki PDF'i yenileriyle değiştir. Adları aynı kalsın:
 
-- `katilim-sertifikasi.pdf`
-- `basari-sertifikasi.pdf`
+- `mode-sertifika-koordinator.pdf` (Muhammed Yağız imzalı)
+- `mode-sertifika-egitmen.pdf` (Ahmed Fahad Muhammed imzalı)
 
 Kurum adı (Mode Academy) `index.html` ve `qr.html` içinde yazıyor. Renkler `assets/style.css` dosyasının başında.
 
